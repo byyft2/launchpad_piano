@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/select_menu_piano"
+        android:title ="피아노"
+        />
+    <item
+        android:id="@+id/select_menu_violin"
+        android:title ="바이올린"
+        />
+    <item
+        android:id="@+id/select_menu_trumpet"
+        android:title ="트럼펫"
+        />
+    <item
+        android:id="@+id/select_menu_flute"
+        android:title ="플룻"
+        />
+</menu>

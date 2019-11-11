@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Play_piano">
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/piano_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="녹음" />
+
+            <Button
+                android:id="@+id/piano_record_stop_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="중지"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/piano_play_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="재생" />
+
+            <Button
+                android:id="@+id/piano_play_stop_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="정지"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/piano_beat_load_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="비트 불러오기" />
+
+        <Button
+            android:id="@+id/piano_beat_play_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="비트재생" />
+
+        <Button
+            android:id="@+id/piano_record_list_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="녹음 목록" />
+
+        <Button
+            android:id="@+id/piano_change_piano_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="피아노 교체" />
+
+        <Button
+            android:id="@+id/piano_change_instrument_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="악기변경" />
+
+        <Button
+            android:id="@+id/piano_help_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="도움말" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/middle_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zero_octave_fa_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="파" />
+
+            <Button
+                android:id="@+id/zero_octave_fa_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="파#" />
+
+            <Button
+                android:id="@+id/zero_octave_fa_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="파#" />
+
+            <Button
+                android:id="@+id/zero_octave_sol_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="솔#" />
+
+            <Button
+                android:id="@+id/zero_octave_sol_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="솔#" />
+
+            <Button
+                android:id="@+id/zero_octave_la_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="라#" />
+
+            <Button
+                android:id="@+id/zero_octave_la_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="라#" />
+
+            <Button
+                android:id="@+id/zero_octave_si_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="시" />
+
+            <Button
+                android:id="@+id/one_octave_do_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="도" />
+
+            <Button
+                android:id="@+id/one_octave_do_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="도#" />
+
+            <Button
+                android:id="@+id/one_octave_do_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="도#" />
+
+            <Button
+                android:id="@+id/one_octave_re_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="레#" />
+
+            <Button
+                android:id="@+id/one_octave_re_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="레#" />
+
+            <Button
+                android:id="@+id/one_octave_mi_top"
+                android:layout_width="0dp"
+                android:onClick="mOnClick"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="미" />
+
+            <Button
+                android:id="@+id/one_octave_fa_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="파" />
+
+            <Button
+                android:id="@+id/one_octave_fa_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="파#" />
+
+            <Button
+                android:id="@+id/one_octave_fa_shop_right"
+                android:layout_width="0dp"
+                android:onClick="mOnClick"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="파#" />
+
+            <Button
+                android:id="@+id/one_octave_sol_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="솔#" />
+
+            <Button
+                android:id="@+id/one_octave_sol_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="솔#" />
+
+            <Button
+                android:id="@+id/one_octave_la_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="라#" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zero_octave_fa_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="0옥타브_파" />
+
+            <Button
+                android:id="@+id/zero_octave_sol_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="솔" />
+
+            <Button
+                android:id="@+id/zero_octave_la_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="라" />
+
+            <Button
+                android:id="@+id/zero_octave_si_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="시" />
+
+            <Button
+                android:id="@+id/one_octave_do_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="도" />
+
+            <Button
+                android:id="@+id/one_octave_re_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:text="레" />
+
+            <Button
+                android:id="@+id/one_octave_mi_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="미" />
+
+            <Button
+                android:id="@+id/one_octave_fa_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="파" />
+
+            <Button
+                android:id="@+id/one_octave_sol_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="솔" />
+
+            <Button
+                android:id="@+id/one_octave_la_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:text="라" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:id="@+id/negative_octave_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/negative_octave_layout_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/negative_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도" />
+
+                    <Button
+                        android:id="@+id/negative_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="미" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라#" />
+
+                    <Button
+                        android:id="@+id/negative_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="시" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/zero_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="미" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/negative_octave_layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/negative_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="-1도" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레" />
+
+                    <Button
+                        android:id="@+id/negative_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="미" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:onClick="mOnClick"
+                        android:layout_weight="1"
+                        android:text="라" />
+
+                    <Button
+                        android:id="@+id/negative_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:onClick="mOnClick"
+                        android:layout_weight="1"
+                        android:text="시" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:onClick="mOnClick"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="도" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:onClick="mOnClick"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="레" />
+
+                    <Button
+                        android:id="@+id/zero_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:onClick="mOnClick"
+                        android:layout_weight="1"
+                        android:text="미" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/two_octave_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/two_octave_layout_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/one_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라#" />
+
+                    <Button
+                        android:id="@+id/one_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="시" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                    <Button
+                        android:id="@+id/two_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="미" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파#" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파#" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔#" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔#" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라#" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라#" />
+
+                    <Button
+                        android:id="@+id/two_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="시" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="도#" />
+
+                    <Button
+                        android:id="@+id/three_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레#" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two_octave_layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/one_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="1시" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="2도" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="레" />
+
+                    <Button
+                        android:id="@+id/two_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="미" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="파" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="솔" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="라" />
+
+                    <Button
+                        android:id="@+id/two_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="시" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="3도" />
+
+                    <Button
+                        android:id="@+id/three_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="mOnClick"
+                        android:text="3미" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
