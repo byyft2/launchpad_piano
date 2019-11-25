@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Play_beat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_record_red_foreground"
+            android:text="녹음버튼" />
+
+        <Button
+            android:id="@+id/selectMusicbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:text="곡 선택" />
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/playbtn_foreground" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/stopbtn_foreground" />
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/settingbtn_foreground" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        android:stretchColumns="*"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/beat_1row_1button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_1row_style" />
+
+            <Button
+                android:id="@+id/beat_1row_2button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_1row_style"/>
+
+            <Button
+                android:id="@+id/beat_1row_3button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_1row_style"/>
+
+            <Button
+                android:id="@+id/beat_1row_4button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_1row_style"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/beat_2row_1button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_2row_style"/>
+
+            <Button
+                android:id="@+id/beat_2row_2button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_2row_style"/>
+
+            <Button
+                android:id="@+id/beat_2row_3button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_2row_style"/>
+
+            <Button
+                android:id="@+id/beat_2row_4button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_2row_style"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/beat_3row_1button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_3row_style"/>
+
+            <Button
+                android:id="@+id/beat_3row_2button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_3row_style"/>
+
+            <Button
+                android:id="@+id/beat_3row_3button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_3row_style"/>
+
+            <Button
+                android:id="@+id/beat_3row_4button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_3row_style"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/beat_4row_1button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_4row_style" />
+
+            <Button
+                android:id="@+id/beat_4row_2button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_4row_style"/>
+
+            <Button
+                android:id="@+id/beat_4row_3button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_4row_style"/>
+
+            <Button
+                android:id="@+id/beat_4row_4button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/button_4row_style"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="9">
+
+    </LinearLayout>
+
+</LinearLayout>

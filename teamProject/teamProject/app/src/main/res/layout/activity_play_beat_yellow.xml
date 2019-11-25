@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beatmaker_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ToggleButton
+        android:id="@+id/yellow_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="17" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="18" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="19" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="20" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:textOff=""
+        android:textOn=""
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="21" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="22" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="23" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="24" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="25" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="26" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:textOff=""
+        android:textOn=""
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="27" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="28" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="29" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:textOff=""
+        android:textOn=""
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="30" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:textOff=""
+        android:textOn=""
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="31" />
+
+    <ToggleButton
+        android:id="@+id/yellow_btn16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:textOff=""
+        android:textOn=""
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="@drawable/button_2row_style"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="32" />
+
+</GridLayout>

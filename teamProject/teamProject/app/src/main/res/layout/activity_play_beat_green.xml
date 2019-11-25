@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/beatmaker_fourth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ToggleButton
+        android:id="@+id/green_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="65"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="66"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:tag="67"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="68"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="69"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="70"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:tag="71"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:tag="72"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="73"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="74"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="75"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="76"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:textOff=""
+        android:textOn=""
+        android:minHeight="0dp"
+        android:tag="77"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:textOff=""
+        android:textOn=""
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="78"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:textOff=""
+        android:textOn=""
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="79"
+        android:text="Button" />
+
+    <ToggleButton
+        android:id="@+id/green_btn16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:background="#ffffff"
+        android:textOff=""
+        android:textOn=""
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:tag="80"
+        android:text="Button" />
+
+</GridLayout>

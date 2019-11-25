@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="제목"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/contentsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="내용"
+            android:inputType="textMultiLine|text"
+            android:lines="8" />
+
+        <SeekBar
+            android:id="@+id/recordBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정지" />
+
+        <Button
+            android:id="@+id/re_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재시작" />
+
+        <LinearLayout
+            android:id="@+id/recodeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="음악파일" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/write_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="작성" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

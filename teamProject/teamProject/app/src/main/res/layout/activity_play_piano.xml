@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Play_piano">
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/piano_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_record_red_foreground" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/piano_play_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/play_piano" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/piano_stop"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_stop_blue_foreground" />
+
+        <Button
+            android:id="@+id/piano_record_list_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="음악 목록" />
+
+        <Button
+            android:id="@+id/piano_change_piano_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/recycling_piano" />
+
+        <Button
+            android:id="@+id/piano_change_instrument_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/setting" />
+
+        <Button
+            android:id="@+id/piano_help_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/middle_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zero_octave_fa_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/zero_octave_fa_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_fa_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_sol_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_sol_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_la_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_la_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/zero_octave_si_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_do_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_do_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_do_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_re_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_re_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_mi_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_fa_top"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_fa_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_fa_shop_right"
+                android:layout_width="0dp"
+                android:onClick="mOnClick"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_sol_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_sol_shop_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_black"
+                />
+
+            <Button
+                android:id="@+id/one_octave_la_shop_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="mOnClick"
+                android:background="@drawable/piano_style_black"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/zero_octave_fa_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/zero_octave_sol_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/zero_octave_la_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/zero_octave_si_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_do_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick"
+                android:text="2 옥타브 도"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/one_octave_re_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_mi_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_fa_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_sol_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+            <Button
+                android:id="@+id/one_octave_la_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/piano_style_white"
+                android:onClick="mOnClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:id="@+id/negative_octave_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/negative_octave_layout_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/negative_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/negative_octave_layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/negative_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick"
+                        android:text="0 옥타브 도"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/negative_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_fa_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_sol_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_la_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/negative_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick"
+                        android:text="1 옥타브 도"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/zero_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/zero_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/two_octave_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <LinearLayout
+                    android:id="@+id/two_octave_layout_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/one_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/one_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_mi_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_si_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_top"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_shop_right"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/three_octave_re_shop_left"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_black"
+                        android:onClick="mOnClick" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/two_octave_layout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/one_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick"
+                        android:text="3 옥타브 도"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/two_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_mi_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_fa_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_sol_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_la_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                    <Button
+                        android:id="@+id/two_octave_si_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/three_octave_do_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick"
+                        android:text="4 옥타브 도"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/three_octave_re_bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/piano_style_white"
+                        android:onClick="mOnClick" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
