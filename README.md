@@ -1,11 +1,9 @@
 # android_team_project
-2019/11/11 1차 합체
-1. 음 구하기
-2. 음 저장하기(intent??)
-3. 녹음하기, 불러오기
+2019/11/11 first
+1. get audio file
+2. save sound  use intent
+3. record , load
 
-2019/11/19 2차 합체
+2019/11/19 last
 
-1.모든 기능 구현
-
-2.DB
+finish
